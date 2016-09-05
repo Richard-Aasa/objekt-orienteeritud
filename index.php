@@ -11,7 +11,5 @@
   $vanused = new Hoidla();
   $vanused->lisa(25);
   $vanused->lisa(15);
-  $vanused->lisa(30);
-  $vanused->lisa(40);
   echo $vanused->kogus();
 ?>
