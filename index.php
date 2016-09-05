@@ -15,8 +15,9 @@
     <title>Test</title>
   </head>
   <body>
-    <form class="" action="index.html">
+    <form action="?">
       <?php echo $vanused->vorm(); ?>
+      <input type="submit" name="salvestus" value="OK">
     </form>
   </body>
 </html>
