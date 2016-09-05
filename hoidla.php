@@ -10,8 +10,9 @@
     public function vorm() {
         $t="";
         foreach ($this as $arv) {
-          $t.="<input type='number' name='a[]' value='$arv'"
+          $t.="<input type='number' name='a[]' value='$arv' />"
         }
+        $t.="<input type='number' name='a[]' />"
         return $t;
     }
     public function loeVormist() {
