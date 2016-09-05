@@ -7,5 +7,21 @@
     public function kogus() {
       return count($this->arvud);
     }
+    public function vorm() {
+        $t="";
+        foreach ($this as $arv) {
+          $t.="<input type='number' name='a[]' value='$arv'"
+        }
+        return $t;
+    }
+    public function loeVormist() {
+      $this->arvud=array();
+      foreach($_REQUEST["a"] as $arv){
+        if($arv) {
+          $this->lisa($arv);
+        }
+      }
+    }
+
   }
 ?>
