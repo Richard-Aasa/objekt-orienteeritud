@@ -17,7 +17,7 @@
   <body>
     <form action="?">
       <?php echo $vanused->vorm(); ?>
-      <input type="submit" name="salvestus" value="OK">
+      <input type="submit" name="salvestus" value="OK" />
     </form>
   </body>
 </html>
