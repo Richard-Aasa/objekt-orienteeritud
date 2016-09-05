@@ -5,13 +5,12 @@
   $vanused->lisa(15);
 ?>
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8">
     <title>Test</title>
   </head>
   <body>
-    <?php echo $vanused->count(); ?>
+    <?php echo $vanused->kogus(); ?>
   </body>
 </html>
