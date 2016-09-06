@@ -32,7 +32,7 @@ matrix:
     - php: hhvm
 
 before_install:
-  - sudo apt-get install postgresql-contrib
+  - sudo apt-get install postgresql-contrib -y
   - sudo /etc/init.d/postgresql-8.4 restart
 
 # execute any number of scripts before the test run, custom env's are available as variables
