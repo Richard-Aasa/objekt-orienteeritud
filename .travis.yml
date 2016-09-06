@@ -33,8 +33,7 @@ matrix:
 
 # execute any number of scripts before the test run, custom env's are available as variables
 before_script:
-  - sudo apt-get install postgresql-contrib -y
-  - sudo /etc/init.d/postgresql-8.4 restart
+  - if [[ "$DB" == "pgsql" ]]; then psql -c "CREATE EXTENSION chkpass;" -U postgres; fi
   - if [[ "$DB" == "pgsql" ]]; then psql -c "DROP DATABASE IF EXISTS hello_world_test;" -U postgres; fi
   - if [[ "$DB" == "pgsql" ]]; then psql -c "create database hello_world_test;" -U postgres; fi
 
